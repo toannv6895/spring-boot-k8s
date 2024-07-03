@@ -40,3 +40,7 @@ kubectl delete service/backend-book-api
 kubectl expose deployment backend-book-api --type=NodePort
 
 @REM Issues: ErrImageNeverPull: Rebuild docker image
+
+@REM How to run?
+@REM https://stackoverflow.com/questions/60710171/minikube-ip-is-not-reachable
+minikube service book-api-service
