@@ -44,3 +44,5 @@ kubectl expose deployment backend-book-api --type=NodePort
 @REM How to run?
 @REM https://stackoverflow.com/questions/60710171/minikube-ip-is-not-reachable
 minikube service book-api-service
+@REM or (https://github.com/kubernetes/minikube/issues/13951#issuecomment-1191517551)
+minikube service book-api-service cluster-node-port --url
